@@ -1,4 +1,4 @@
-Binary:
+Binary examples:
 
 1 | 1
 0
@@ -14,3 +14,18 @@ Binary:
 0
 3 : 0011
 
+
+Octal examples:
+
+26 | 2
+ 3 | 3
+ 0
+
+
+Hex:
+10 - A
+11 - B
+12 - C
+13 - D
+14 - E
+15 - F
