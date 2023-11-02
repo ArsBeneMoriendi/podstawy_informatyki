@@ -1,17 +1,17 @@
 def func():
-    liczba1 = int(input('Podaj pierwszą liczbę: '))
-    liczba2 = int(input('Podaj drugą liczbę: '))
-    wynik = (liczba1+liczba2)*100
-    print(f'Wprowadzone liczby: {liczba1}, {liczba2}')
-    print(f'Wynik to {wynik}')   
+    num1 = int(input('Podaj pierwszą liczbę: '))
+    num2 = int(input('Podaj drugą liczbę: '))
+    result = (num1+num2)*100
+    print(f'Wprowadzone liczby: {num1}, {num2}')
+    print(f'Wynik to {result}')   
 func()
 
 def func2():
-    liczba1 = int(input('Podaj pierwszą liczbę: '))
-    liczba2 = int(input('Podaj drugą liczbę: '))
-    mnoznik = int(input('Podaj mnożnik: '))
-    wynik = (liczba1+liczba2)*mnoznik
-    print(f'Wprowadzone liczby: {liczba1}, {liczba2}')
+    num1 = int(input('Podaj pierwszą liczbę: '))
+    num2 = int(input('Podaj drugą liczbę: '))
+    multi = int(input('Podaj mnożnik: '))
+    result = (num1+num2)*multi
+    print(f'Wprowadzone liczby: {num1}, {num2}')
     print(f'Wprowadzony mnożnik: {mnoznik}')
-    print(f'Wynik to {wynik}')   
+    print(f'Wynik to {result}')   
 func2()
