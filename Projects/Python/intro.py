@@ -37,8 +37,3 @@ def funkcja(imie):
 funkcja('Zuzia')
 
 
-# In[ ]:
-
-
-
-
