@@ -3,9 +3,9 @@
 #include "time.h"
 #include "windows.h"
 
-int input = 0;
-int random = 0;
-int attempt = 0;
+static int input = 0;
+static int random = 0;
+static int attempt = 0;
 
 void draw()
 {
