@@ -12,6 +12,6 @@ def func2():
     multi = int(input('Podaj mnożnik: '))
     result = (num1 + num2) * multi
     print(f'Wprowadzone liczby: {num1}, {num2}')
-    print(f'Wprowadzony mnożnik: {mnoznik}')
+    print(f'Wprowadzony mnożnik: {multi}')
     print(f'Wynik to {result}')   
 func2()
