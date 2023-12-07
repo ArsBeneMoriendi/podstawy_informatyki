@@ -23,18 +23,18 @@ print("\33[0m\nThe program has chosen a number from 1 to 100, now you can start 
 
 try:
     input_num = int(input("Enter a number: "))
-    att = 0
+    attempt = 0
     while input_num != random_num:
         if input_num < random_num:
-            att += 1
-            print(f"\nThe clue number is higher than the entered one. Keep guessing.\nNumber of attempts: {att}\n")
+            attempt += 1
+            print(f"\nThe clue number is higher than the entered one. Keep guessing.\nNumber of attempts: {attempt}\n")
         elif input_num > random_num:
-            att += 1
-            print(f"\nThe clue number is lower than the entered one. Keep guessing.\nNumber of attempts: {att}\n")
+            attempt += 1
+            print(f"\nThe clue number is lower than the entered one. Keep guessing.\nNumber of attempts: {attempt}\n")
         input_num = int(input("Enter a number: "))
-    att += 1
+    attempt += 1
     os.system("cls")
-    print(f"\33[92mCongratulations! The clue number was {random_num}.\nYou have guessed it within {att} attempts.\n\n")
+    print(f"\33[92mCongratulations! The clue number was {random_num}.\nYou have guessed it within {attempt} attempts.\n\n")
     os.system("pause")
 except ValueError:
     os.system("cls")
