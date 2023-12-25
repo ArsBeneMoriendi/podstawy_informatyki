@@ -1,13 +1,13 @@
-list1 = []
+musicList = []
 n = 0
 
 try:
     for i in range(7):
         n += 1
         print(f"\nPosition number {n}.")
-        list1.append([input("Artist's name: "),
-                     int(input("Creation or debut year: ")),
-                     input("Most popular song on Spotify: "),
-                     int(input("Number of listeners: "))])
+        musicList.append([input("Artist's name: "),
+                          int(input("Creation or debut year: ")),
+                          input("Most popular song on Spotify: "),
+                          int(input("Number of listeners: "))])
 except ValueError:
     print(f"\nYou've entered an unacceptable value at position number {n}.")
