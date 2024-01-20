@@ -23,28 +23,33 @@ random_num = random.randrange(1, 100)
 
 
 def checking():
+    global attempt
     try:
         event, values = window.read()
         input_num = int(values["key"])
         if input_num != random_num:
             if input_num < random_num:
-                psg.popup_auto_close(f"The clue number is higher than the entered one. Keep guessing.",
+                attempt += 1
+                psg.popup_auto_close(f"The clue number is higher than the entered one. \nKeep guessing...\nAttempt:{attempt}",
                                      text_color='red', title="Higher")
                 checking()
             elif input_num > random_num:
-                psg.popup_auto_close(f"The clue number is lower than the entered one. Keep guessing.",
+                attempt += 1
+                psg.popup_auto_close(f"The clue number is lower than the entered one. \nKeep guessing...\nAttempt: {attempt}",
                                      text_color='red', title="Lower")
                 checking()
         elif input_num == random_num:
-            psg.popup_no_buttons(f"Congratulations! The clue number was {random_num}.\nYou've guessed it!",
+            attempt += 1
+            psg.popup_no_buttons(f"Congratulations! The clue number was {random_num}.\nYou've guessed it within {attempt} attempts!",
                                  text_color='lime', title="Number guessed")
         else:
             psg.popup_no_buttons("Something went wrong", text_color='white', title="Error")
+            checking()
     except ValueError:
         psg.popup_auto_close(f"You need to enter an integer number", text_color='white')
         checking()
 
 
+attempt = 0
 checking()
-
 window.close()
