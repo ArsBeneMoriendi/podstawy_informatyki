@@ -48,6 +48,8 @@ def checking():
     except ValueError:
         psg.popup_auto_close(f"You need to enter an integer number", text_color='white')
         checking()
+    except TypeError:
+        return
 
 
 attempt = 0
